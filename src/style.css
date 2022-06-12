@@ -1,0 +1,175 @@
+.header {
+  background-color: grey;
+  justify-content: center;
+  display: flex;
+  background: #ffffff;
+  min-height: 80px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 0.5em;
+}
+
+.header-form {
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  width: 1168px;
+}
+
+.header-logo {
+  padding: 1px 0 0 1em;
+  cursor: pointer;
+}
+
+.header-search {
+  max-width: 763px;
+  min-width: 280px;
+  height: 40px;
+  display: inline-flex;
+  flex-grow: 2;
+  align-items: center;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+}
+
+.header-search__icon {
+  margin-left: 14px;
+  margin-right: 14px;
+  order: -1;
+}
+
+.header-search__input {
+  width: 100%;
+  border: 0px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #bbc4d6;
+  outline: none;
+}
+
+.header-account {
+  border-left: 1px solid #ebebf1;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 0 0 0 19px;
+}
+
+.header-account__text {
+}
+.header-account__text:after {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  content: "Константин";
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #768298;
+}
+.header-account__icon {
+  background: url("https://goo.su/cZNyUJs");
+  width: 40px;
+  height: 40px;
+}
+
+.main {
+  padding: 0 8% 0 9.38%;
+}
+.main__title {
+  min-height: 58px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #121920;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.main-content__button {
+  height: 120px;
+  width: 270px;
+    
+}
+
+.button_white {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-color: #ebebf1;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button_white:hover {
+  box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1),
+    0px 0px 10px rgba(164, 164, 164, 0.03);
+  border-radius: 5px;
+}
+
+@media all and (max-width: 768px) {
+  .main__title {
+    font-size: 28px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .header-logo {
+    order: 1;
+  }
+  .header-search {
+    order: 3;
+    min-width: 320px;
+  }
+  .header-account {
+    order: 2;
+  }
+}
+
+@media all and (max-width: 573px) {
+  .header-logo {
+    order: 1;
+  }
+  .header-account__text:after {
+    content: "";
+  }
+  .header-account__icon {
+    background: url("https://goo.su/UCWCv") no-repeat;
+    width: 24px;
+    height: 24px;
+    padding: 0 1em 0 0;
+    margin: 0.5em 0 0 0;
+  }
+  .header-search {
+    order: 3;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 0px;
+  }
+  .header-account {
+    order: 2;
+    border: 0;
+  }
+}
